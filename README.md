@@ -1,6 +1,6 @@
-# Preact
+# COTLMOD.net
 
-This directory is a brief example of a [Preact](https://preactjs.com/) app that can be deployed to Vercel with zero configuration.
+https://cotlmod.net is the website for the Cult of The Lamb modding community !
 
 ## Deploy Your Own
 
