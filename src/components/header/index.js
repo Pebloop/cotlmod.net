@@ -4,7 +4,7 @@ import style from './style.css';
 
 const Header = () => (
 	<header class={style.header}>
-		<h1>Preact App</h1>
+		<h1>Cult of the Lamb Modsite</h1>
 		<nav>
 			<Link activeClassName={style.active} href="/">Home</Link>
 			<a href="https://cult-of-the-lamb.thunderstore.io/" target="_blank">Mods</a>
