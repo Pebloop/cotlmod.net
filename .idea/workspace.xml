@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eeaba04-87a0-4b6e-ac50-4097dfff437b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/Header.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/db.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/discord/callback/+server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cotlmod_logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/db.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/discord/callback/+server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/discord/callback/+server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +107,7 @@
       <updated>1747679579446</updated>
       <workItem from="1747679579963" duration="8602000" />
       <workItem from="1747691501245" duration="11619000" />
-      <workItem from="1747703719535" duration="1071000" />
+      <workItem from="1747703719535" duration="3284000" />
     </task>
     <servers />
   </component>

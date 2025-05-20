@@ -15,6 +15,8 @@ export const GET: RequestHandler = async ({ url }) => {
       });
     const json = await response.json();
 
+    console.log('Response from Discord:', json);
+
     if (response.ok) {
         const accessToken = json.access_token;
         const refreshToken = json.refresh_token;
