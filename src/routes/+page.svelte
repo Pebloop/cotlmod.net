@@ -4,13 +4,8 @@
     export let data;
 
     console.log(data);
-    const { mods, user, token } = data;
+    const { mods } = data;
 
-    onMount(() => {
-        if (token) {
-            document.cookie = `token=${token}; path=/; max-age=3600;`;
-        }
-    });
 </script>
 
 <div>
