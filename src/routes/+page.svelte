@@ -1,8 +1,16 @@
 <script lang="ts">
+    import { onMount } from 'svelte';
+
     export let data;
 
     console.log(data);
-    const { mods, user } = data;
+    const { mods, user, token } = data;
+
+    onMount(() => {
+        if (token) {
+            document.cookie = `token=${token}; path=/; max-age=3600;`;
+        }
+    });
 </script>
 
 <div>

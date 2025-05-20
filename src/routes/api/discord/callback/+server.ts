@@ -33,12 +33,8 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
         const refreshToken = json.refresh_token;
         const expiresIn = json.expires_in;
 
-        // Set the cookies
-        cookies.set('access_token', accessToken, {path: '/', expires: new Date(expiresIn)});
-        cookies.set('refresh_token', refreshToken, {path: '/', expires: new Date(expiresIn)});
-
         // Redirect to the mods page
-        return new Response(null, { status: 302, headers: { Location: '/' } });
+        return new Response(null, { status: 302, headers: { Location: '/?access_token=' + accessToken + '&refresh_token=' + refreshToken + "expires_in=" + expiresIn } });
     } else {
         return new Response(JSON.stringify({ error: json.error }), { status: 500 });
     }
