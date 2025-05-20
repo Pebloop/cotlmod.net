@@ -20,7 +20,7 @@ export const load: PageServerLoad = async ({ cookies,  url }) => {
         }
     }
 
-    const response = await fetch('https://discordapp.com/api/v10/users/@me', {
+    const response = await fetch('https://discord.com/api/v10/users/@me', {
         headers: {
             Authorization: `Bearer ${access_token}`
         }
