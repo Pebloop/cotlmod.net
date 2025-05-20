@@ -6,6 +6,8 @@
     console.log(data);
     const { mods } = data;
 
+
+
 </script>
 
 <div>
@@ -17,3 +19,8 @@
         </div>
     {/each}
 </div>
+
+<a class="absolute right-4 bottom-4 bg-red text-white rounded-4xl w-10 h-10 p-2 shadow-lg transition duration-300 ease-in-out"
+        href="/mod/new">
+    +
+</a>

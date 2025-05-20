@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eeaba04-87a0-4b6e-ac50-4097dfff437b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/routes/mod/new/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="Header" />
-        <option value="+page" />
         <option value="TypeScript File" />
+        <option value="+page" />
       </list>
     </option>
   </component>
@@ -103,7 +105,7 @@
       <updated>1747679579446</updated>
       <workItem from="1747679579963" duration="8602000" />
       <workItem from="1747691501245" duration="11619000" />
-      <workItem from="1747703719535" duration="6466000" />
+      <workItem from="1747703719535" duration="6975000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,11 @@
     import {env} from "$env/dynamic/public";
 
     export let user;
+    
+    function logout() {
+        document.cookie = `token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+        window.location.href = '/';
+    }
 </script>
 
 <div class="w-full bg-gray-2 h-20 rounded-b-md shadow-md flex items-center justify-between">
@@ -20,8 +25,7 @@
     {#if user && user.username}
         <div class="flex flex-row items-center">
             <a href="/profile" class="text-2xl font-bold text-center m-4">{user.username}</a>
-            <img src={user.avatar} alt={user.username} class="w-10 h-10 rounded-full shadow-lg" />
-            <a href="/logout" class="text-xl font-bold text-center m-4 bg-red rounded-lg p-2">Logout</a>
+            <button class="text-xl font-bold text-center m-4 bg-red rounded-lg p-2" on:click={logout}>Logout</button>
         </div>
     {:else}
         <div class="flex flex-row items-center">
