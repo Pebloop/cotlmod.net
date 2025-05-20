@@ -6,12 +6,23 @@ export const GET: RequestHandler = async ({ url }) => {
     const code = url.searchParams.get("code");
     const creds = btoa(`${env.CLIENT_ID}:${env.CLIENT_SECRET}`);
 
+    if (!code) {
+        return new Response(JSON.stringify({ error: 'No code provided' }), { status: 400 });
+    }
+
+    let body = new URLSearchParams();
+    body.append("client_id", env.CLIENT_ID);
+    body.append("client_secret", env.CLIENT_SECRET);
+    body.append("grant_type", "authorization_code");
+    body.append("code", code);
+
     const response = await fetch(`https://discordapp.com/api/oauth2/token?grant_type=authorization_code&code=${code}`,
       {
           method: 'POST',
           headers: {
               Authorization: `Basic ${creds}`,
           },
+        body: body,
       });
     const json = await response.json();
 
