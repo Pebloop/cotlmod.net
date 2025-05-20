@@ -1,7 +1,8 @@
 <script lang="ts">
     export let data;
 
-    const { mods } = data;
+    console.log(data);
+    const { mods, user } = data;
 </script>
 
 <div>

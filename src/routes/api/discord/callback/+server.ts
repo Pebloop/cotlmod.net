@@ -1,7 +1,7 @@
 import type {RequestHandler} from "@sveltejs/kit";
 import {env} from "$env/dynamic/private";
 
-export const GET: RequestHandler = async ({ url }) => {
+export const GET: RequestHandler = async ({ url, cookies }) => {
 
     const code = url.searchParams.get("code");
     const creds = btoa(`${env.CLIENT_ID}:${env.CLIENT_SECRET}`);
@@ -10,7 +10,7 @@ export const GET: RequestHandler = async ({ url }) => {
         return new Response(JSON.stringify({ error: 'No code provided' }), { status: 400 });
     }
 
-    let body = new URLSearchParams();
+    const body = new URLSearchParams();
     body.append("client_id", env.CLIENT_ID);
     body.append("client_secret", env.CLIENT_SECRET);
     body.append("grant_type", "authorization_code");
@@ -33,17 +33,12 @@ export const GET: RequestHandler = async ({ url }) => {
         const refreshToken = json.refresh_token;
         const expiresIn = json.expires_in;
 
-        // Save the tokens to the database
-        // await db.tokens.create({ accessToken, refreshToken, expiresIn });
+        // Set the cookies
+        cookies.set('access_token', accessToken, {path: '/', expires: expiresIn});
+        cookies.set('refresh_token', refreshToken, {path: '/', expires: expiresIn});
 
         // Redirect to the mods page
-        return new Response(
-            JSON.stringify({
-                accessToken,
-                refreshToken,
-                expiresIn,
-            })
-          , { status: 302, headers: { Location: '/' } });
+        return new Response(null, { status: 302, headers: { Location: '/' } });
     } else {
         return new Response(JSON.stringify({ error: json.error }), { status: 500 });
     }
