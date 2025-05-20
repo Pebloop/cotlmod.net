@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+    export let data;
+
+    const { mods } = data;
+</script>
+
+<div>
+    {#each mods as mod}
+        <div class="flex flex-col items-center justify-center">
+            <a href={mod.link} class="text-2xl font-bold text-center m-4">{mod.name}</a>
+            <img src={mod.image} alt={mod.name} class="w-1/2 h-auto rounded-lg shadow-lg" />
+            <p class="text-lg text-center m-4">{mod.description}</p>
+        </div>
+    {/each}
+</div>
