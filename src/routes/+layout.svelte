@@ -4,7 +4,8 @@
 	import { onMount } from 'svelte';
 
 
-	let props: any = $props();
+	export let data;
+	const props = data;
 	console.log(props);
 
 	onMount(() => {
@@ -17,4 +18,4 @@
 
 <Header user={props.user} />
 
-{@render props.children()}
+<slot />
