@@ -26,7 +26,7 @@ export const POST: RequestHandler = async ({ request }) => {
         author: user.id,
         version: body.version,
         link: body.link,
-        image: body.image_url,
+        image: body.image,
         tags: body.tags,
     })
 
