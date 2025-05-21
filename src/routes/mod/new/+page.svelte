@@ -31,7 +31,7 @@
 		.then(data => {
 			if (data.success) {
 				alert('Mod created successfully!');
-				//window.location.href = '/';
+				window.location.href = '/';
 			} else {
 				alert('Error creating mod: ' + data.message);
 			}

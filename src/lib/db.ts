@@ -18,8 +18,22 @@ async function getMods() {
     return data;
 }
 
+async function addMod(mod) {
+    const { data, error } = await supabase
+        .from('mods')
+        .insert([mod])
+
+    if (error) {
+        console.error('Error adding mod:', error);
+        return null;
+    }
+
+    return data;
+}
+
 export const db = {
     mods: {
         getAll: getMods,
+        add: addMod,
     },
 }
