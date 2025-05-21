@@ -24,7 +24,7 @@
     </div>
     {#if user && user.username}
         <div class="flex flex-row items-center">
-            <a href="/profile" class="text-2xl font-bold text-center m-4">{user.username}</a>
+            <p class="text-2xl font-bold text-center m-4">{user.username}</p>
             <button class="text-xl font-bold text-center m-4 bg-red rounded-lg p-2" on:click={logout}>Logout</button>
         </div>
     {:else}
@@ -36,6 +36,10 @@
 
 <style>
     a {
+        font-family: "Julius Sans One";
+    }
+
+    button {
         font-family: "Julius Sans One";
     }
 </style>
