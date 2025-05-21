@@ -20,7 +20,9 @@
     {/each}
 </div>
 
-<a class="absolute right-4 bottom-4 bg-red text-white rounded-4xl w-10 h-10 p-2 shadow-lg transition duration-300 ease-in-out"
-        href="/mod/new">
-    +
+<a class="absolute right-4 bottom-4 bg-red text-white rounded-4xl w-10 h-10 p-2 shadow-lg flex justify-center items-center transition duration-300 ease-in-out"
+        href="/mod/new" aria-label="Create New Mod">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
+    </svg>
 </a>
