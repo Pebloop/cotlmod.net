@@ -27,7 +27,7 @@ export const POST: RequestHandler = async ({ request }) => {
         version: body.version,
         link: body.link,
         image: body.image,
-        tags: body.tags,
+        tags: body.tags.join(","),
     })
 
     return new Response(JSON.stringify({ message: "Mod successfully added" }), { status: 200, headers: { "Content-Type": "application/json" } });
