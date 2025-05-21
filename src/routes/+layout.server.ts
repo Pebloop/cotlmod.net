@@ -6,7 +6,7 @@ export const load: LayoutServerLoad = async ({ cookies,  url }) => {
     //const expires_in = url.searchParams.get('expires_in');
 
     if (!access_token) {
-        access_token = cookies.get('access_token') || null;
+        access_token = cookies.get('token') || null;
     }
 
     if (!access_token) {
