@@ -1,1 +1,0 @@
-import{q as t,p as e}from"./chunk-PVWAREVJ-e92Y5Ger.js";import{H as o}from"./header-CwtG5cn1.js";function s({}){return[{title:"COTLMODS"},{name:"description",content:"The Cult of The Lamb mods website."}]}const i=t(function(){return e.jsx(o,{})});export{i as default,s as meta};

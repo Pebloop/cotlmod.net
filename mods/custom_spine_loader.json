@@ -1,0 +1,10 @@
+{
+  "name": "Custom Spine Loader",
+  "author": "Infernodragon1",
+  "author_link": "https://cotlminimod.infernodragon.net/",
+  "image": "https://staticdelivery.nexusmods.com/mods/4736/images/49/49-1756734060-894924665.png",
+  "tags": ["tool"],
+  "description": "A Custom Spine Loader to load spine assets into Cult of the Lamb",
+  "link": "https://www.nexusmods.com/cultofthelamb/mods/49",
+  "page":  "https://raw.githubusercontent.com/InfernoDragon0/COTL-CustomSpineLoader/refs/heads/master/README.md"
+}
