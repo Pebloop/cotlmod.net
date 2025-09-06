@@ -1,0 +1,49 @@
+{
+  "_chunk-PVWAREVJ-yd4aHsZo.js": {
+    "file": "assets/chunk-PVWAREVJ-yd4aHsZo.js",
+    "name": "chunk-PVWAREVJ"
+  },
+  "app/root.tsx?__react-router-build-client-route": {
+    "file": "assets/root-C7CYCZc_.js",
+    "name": "root",
+    "src": "app/root.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_chunk-PVWAREVJ-yd4aHsZo.js",
+      "app/routes/home.tsx?__react-router-build-client-route"
+    ],
+    "css": [
+      "assets/root-L-Bv-Fnr.css"
+    ]
+  },
+  "app/routes/home.tsx?__react-router-build-client-route": {
+    "file": "assets/home-7-tMBDnP.js",
+    "name": "home",
+    "src": "app/routes/home.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_chunk-PVWAREVJ-yd4aHsZo.js"
+    ],
+    "assets": [
+      "assets/logo-dark-pX2395Y0.svg",
+      "assets/logo-light-CVbx2LBR.svg"
+    ]
+  },
+  "app/welcome/logo-dark.svg": {
+    "file": "assets/logo-dark-pX2395Y0.svg",
+    "src": "app/welcome/logo-dark.svg"
+  },
+  "app/welcome/logo-light.svg": {
+    "file": "assets/logo-light-CVbx2LBR.svg",
+    "src": "app/welcome/logo-light.svg"
+  },
+  "node_modules/.pnpm/@react-router+dev@7.8.2_@re_c1afebe1d31b1b7117da1d7c11c2e338/node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx": {
+    "file": "assets/entry.client-x_0sRjUv.js",
+    "name": "entry.client",
+    "src": "node_modules/.pnpm/@react-router+dev@7.8.2_@re_c1afebe1d31b1b7117da1d7c11c2e338/node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx",
+    "isEntry": true,
+    "imports": [
+      "_chunk-PVWAREVJ-yd4aHsZo.js"
+    ]
+  }
+}
